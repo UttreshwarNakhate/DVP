@@ -109,7 +109,7 @@ const pauseVideo = () => {
 
   useEffect(() => {
     if (selectedCategory === 'all') {
-      const allImages = [...images, ...modelingImages, ...weddingImages];
+      const allImages = [...images, ...weddingImages];
       setFilteredImages(allImages.slice(15, ALL_LIMIT)); // 👈 only 25;
     } else if (selectedCategory === 'modeling') {
       const supabaseModeling = images.filter((img) => img.category === 'modeling');
