@@ -1,0 +1,597 @@
+[
+  {
+    "id": "wedding-1",
+    "title": "IMG-20251227-WA0041",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0041.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0041.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-2",
+    "title": "IMG-20251227-WA0060",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0060.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0060.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-3",
+    "title": "IMG-20251227-WA0061",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0061.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0061.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-4",
+    "title": "IMG-20251227-WA0062",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0062.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0062.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-5",
+    "title": "IMG-20251227-WA0063",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0063.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0063.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-6",
+    "title": "IMG-20251227-WA0064",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0064.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0064.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-7",
+    "title": "IMG-20251227-WA0065",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0065.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0065.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-8",
+    "title": "IMG-20251227-WA0066",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0066.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0066.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-9",
+    "title": "IMG-20251227-WA0067",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0067.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0067.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-10",
+    "title": "IMG-20251227-WA0068",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0068.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0068.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-11",
+    "title": "IMG-20251227-WA0069",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0069.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0069.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-12",
+    "title": "IMG-20251227-WA0070",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0070.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0070.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-13",
+    "title": "IMG-20251227-WA0071",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0071.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0071.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-14",
+    "title": "IMG-20251227-WA0072",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0072.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0072.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-15",
+    "title": "IMG-20251227-WA0073",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0073.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0073.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-16",
+    "title": "IMG-20251227-WA0074",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0074.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0074.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-17",
+    "title": "IMG-20251227-WA0075",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0075.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0075.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-18",
+    "title": "IMG-20251227-WA0076",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0076.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0076.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-19",
+    "title": "IMG-20251227-WA0077",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0077.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0077.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-20",
+    "title": "IMG-20251227-WA0078",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0078.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0078.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-21",
+    "title": "IMG-20251227-WA0079",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0079.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0079.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-22",
+    "title": "IMG-20251227-WA0080",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0080.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0080.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-23",
+    "title": "IMG-20251227-WA0081",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0081.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0081.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-24",
+    "title": "IMG-20251227-WA0082",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0082.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0082.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-25",
+    "title": "IMG-20251227-WA0083",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0083.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0083.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-26",
+    "title": "IMG-20251227-WA0084",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0084.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0084.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-27",
+    "title": "IMG-20251227-WA0085",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0085.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0085.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-28",
+    "title": "IMG-20251227-WA0086",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0086.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0086.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-29",
+    "title": "IMG-20251227-WA0087",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0087.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0087.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-30",
+    "title": "IMG-20251227-WA0088",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0088.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0088.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-31",
+    "title": "IMG-20251227-WA0089",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0089.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0089.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-32",
+    "title": "IMG-20251227-WA0090",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0090.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0090.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-33",
+    "title": "IMG-20251227-WA0091",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0091.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0091.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-34",
+    "title": "IMG-20251227-WA0092",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0092.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0092.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-35",
+    "title": "IMG-20251227-WA0093",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0093.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0093.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-36",
+    "title": "IMG-20251227-WA0094",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0094.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0094.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-37",
+    "title": "IMG-20251227-WA0095",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0095.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0095.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-38",
+    "title": "IMG-20251227-WA0096",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0096.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0096.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-39",
+    "title": "IMG-20251227-WA0097",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0097.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0097.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-40",
+    "title": "IMG-20251227-WA0098",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0098.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0098.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-41",
+    "title": "IMG-20251227-WA0099",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0099.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0099.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-42",
+    "title": "IMG-20251227-WA0100",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0100.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0100.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-43",
+    "title": "IMG-20251227-WA0101",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0101.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0101.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-44",
+    "title": "IMG-20251227-WA0102",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0102.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0102.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-45",
+    "title": "IMG-20251227-WA0104",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0104.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0104.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-46",
+    "title": "IMG-20251227-WA0105",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0105.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0105.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-47",
+    "title": "IMG-20251227-WA0106",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0106.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0106.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-48",
+    "title": "IMG-20251227-WA0107",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0107.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0107.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-49",
+    "title": "IMG-20251227-WA0108",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0108.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0108.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-50",
+    "title": "IMG-20251227-WA0109",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0109.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0109.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-51",
+    "title": "IMG-20251227-WA0110",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0110.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0110.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-52",
+    "title": "IMG-20251227-WA0111",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0111.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0111.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-53",
+    "title": "IMG-20251227-WA0112",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0112.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0112.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-54",
+    "title": "IMG-20251227-WA0113",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0113.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0113.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-55",
+    "title": "IMG-20251227-WA0114",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0114.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0114.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-56",
+    "title": "IMG-20251227-WA0115",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0115.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0115.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-57",
+    "title": "IMG-20251227-WA0116",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0116.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0116.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-58",
+    "title": "IMG-20251227-WA0117",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0117.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0117.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-59",
+    "title": "IMG-20251227-WA0118",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0118.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0118.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-60",
+    "title": "IMG-20251227-WA0119",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0119.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0119.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-61",
+    "title": "IMG-20251227-WA0120",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0120.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0120.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-62",
+    "title": "IMG-20251227-WA0121",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0121.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0121.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-63",
+    "title": "IMG-20251227-WA0122",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0122.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0122.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-64",
+    "title": "IMG-20251227-WA0123",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0123.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0123.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-65",
+    "title": "IMG-20251227-WA0124",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0124.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0124.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-66",
+    "title": "IMG-20251227-WA0125",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0125.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0125.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-67",
+    "title": "IMG-20251227-WA0126",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0126.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0126.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-68",
+    "title": "IMG-20251227-WA0127",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0127.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0127.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-69",
+    "title": "IMG-20251227-WA0128",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0128.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0128.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-70",
+    "title": "IMG-20251227-WA0129",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0129.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0129.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-71",
+    "title": "IMG-20251227-WA0130",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0130.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0130.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-72",
+    "title": "IMG-20251227-WA0131",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0131.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0131.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-73",
+    "title": "IMG-20251227-WA0132",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0132.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0132.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-74",
+    "title": "IMG-20251227-WA0133",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0133.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0133.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-75",
+    "title": "IMG-20251227-WA0134",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0134.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0134.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-76",
+    "title": "IMG-20251227-WA0135",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0135.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0135.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-77",
+    "title": "IMG-20251227-WA0136",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0136.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0136.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-78",
+    "title": "IMG-20251227-WA0137",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0137.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0137.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-79",
+    "title": "IMG-20251227-WA0138",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0138.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0138.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-80",
+    "title": "IMG-20251227-WA0139",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0139.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0139.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-81",
+    "title": "IMG-20251227-WA0140",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0140.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0140.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-82",
+    "title": "IMG-20251227-WA0141",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0141.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0141.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-83",
+    "title": "IMG-20251227-WA0142",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0142.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0142.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-84",
+    "title": "IMG-20251227-WA0143",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0143.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0143.jpg",
+    "category": "wedding"
+  },
+  {
+    "id": "wedding-85",
+    "title": "IMG-20251227-WA0144",
+    "image_url": "/Wedding_Photos/IMG-20251227-WA0144.jpg",
+    "thumbnail_url": "/Wedding_Photos/IMG-20251227-WA0144.jpg",
+    "category": "wedding"
+  }
+]

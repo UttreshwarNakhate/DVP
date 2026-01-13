@@ -1,0 +1,121 @@
+{
+  "wedding": [
+    {
+      "id": "wedding-1",
+      "title": "Wedding_Photo",
+      "image_url": "/Services_Photos/Wedding_Photo.jpg",
+      "thumbnail_url": "/Services_Photos/Wedding_Photo.jpg",
+      "category": "wedding"
+    }
+  ],
+  "modeling": [
+    {
+      "id": "modeling-1",
+      "title": "1F2A8259",
+      "image_url": "/Modeling_Photos/1F2A8259.JPG",
+      "thumbnail_url": "/Modeling_Photos/1F2A8259.JPG",
+      "category": "modeling"
+    },
+    {
+      "id": "modeling-2",
+      "title": "1F2A8268",
+      "image_url": "/Modeling_Photos/1F2A8268.JPG",
+      "thumbnail_url": "/Modeling_Photos/1F2A8268.JPG",
+      "category": "modeling"
+    },
+    {
+      "id": "modeling-3",
+      "title": "1F2A8307",
+      "image_url": "/Modeling_Photos/1F2A8307.JPG",
+      "thumbnail_url": "/Modeling_Photos/1F2A8307.JPG",
+      "category": "modeling"
+    },
+    {
+      "id": "modeling-4",
+      "title": "1F2A8328",
+      "image_url": "/Modeling_Photos/1F2A8328.JPG",
+      "thumbnail_url": "/Modeling_Photos/1F2A8328.JPG",
+      "category": "modeling"
+    },
+    {
+      "id": "modeling-5",
+      "title": "1F2A8705",
+      "image_url": "/Modeling_Photos/1F2A8705.JPG",
+      "thumbnail_url": "/Modeling_Photos/1F2A8705.JPG",
+      "category": "modeling"
+    },
+    {
+      "id": "modeling-6",
+      "title": "1F2A8709",
+      "image_url": "/Modeling_Photos/1F2A8709.JPG",
+      "thumbnail_url": "/Modeling_Photos/1F2A8709.JPG",
+      "category": "modeling"
+    },
+    {
+      "id": "modeling-7",
+      "title": "1F2A8710",
+      "image_url": "/Modeling_Photos/1F2A8710.JPG",
+      "thumbnail_url": "/Modeling_Photos/1F2A8710.JPG",
+      "category": "modeling"
+    },
+    {
+      "id": "modeling-8",
+      "title": "1F2A8720",
+      "image_url": "/Modeling_Photos/1F2A8720.JPG",
+      "thumbnail_url": "/Modeling_Photos/1F2A8720.JPG",
+      "category": "modeling"
+    },
+    {
+      "id": "modeling-9",
+      "title": "1F2A8722",
+      "image_url": "/Modeling_Photos/1F2A8722.JPG",
+      "thumbnail_url": "/Modeling_Photos/1F2A8722.JPG",
+      "category": "modeling"
+    }
+  ],
+  "pre-wedding": [
+    {
+      "id": "pre-wedding-1",
+      "title": "Pre_Wedding_Photo",
+      "image_url": "/Services_Photos/Pre_Wedding_Photo.jpg",
+      "thumbnail_url": "/Services_Photos/Pre_Wedding_Photo.jpg",
+      "category": "pre-wedding"
+    }
+  ],
+  "newborn": [
+    {
+      "id": "newborn-1",
+      "title": "newborn",
+      "image_url": "/Services_Photos/newborn.JPG",
+      "thumbnail_url": "/Services_Photos/newborn.JPG",
+      "category": "newborn"
+    }
+  ],
+  "birthday": [
+    {
+      "id": "birthday-1",
+      "title": "Birthday_Shoot",
+      "image_url": "/Services_Photos/Birthday_Shoot.jpg",
+      "thumbnail_url": "/Services_Photos/Birthday_Shoot.jpg",
+      "category": "birthday"
+    }
+  ],
+  "indoor": [
+    {
+      "id": "indoor-1",
+      "title": "Indoor_Photo",
+      "image_url": "/Services_Photos/Indoor_Photo.jpg",
+      "thumbnail_url": "/Services_Photos/Indoor_Photo.jpg",
+      "category": "indoor"
+    }
+  ],
+  "outdoor": [
+    {
+      "id": "outdoor-1",
+      "title": "Outdoor_Photo",
+      "image_url": "/Services_Photos/Outdoor_Photo.jpg",
+      "thumbnail_url": "/Services_Photos/Outdoor_Photo.jpg",
+      "category": "outdoor"
+    }
+  ]
+}

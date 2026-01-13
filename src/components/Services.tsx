@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Heart, Baby, Cake, Camera, Home, Sunrise, ArrowRight } from 'lucide-react';
-import { supabase, Service } from '../lib/supabase';
-import preweddingImages from '../data/prewedding.json';
-import servicesPhotos from '../data/services_photos.json';
-import { serviceImageMap } from '../data/serviceImageMap';
+import { servicesData, Service } from '../data/servicesData';
 
 const iconMap: { [key: string]: typeof Heart } = {
   Heart,
@@ -24,95 +21,12 @@ export default function Services() {
 
   const loadServices = async () => {
     try {
-      const { data, error } = await supabase
-        .from('services')
-        .select('*')
-        .eq('is_active', true)
-        .order('display_order');
-
-      if (error) throw error;
-
-      const imgs = preweddingImages as string[];
-      const svcPhotos = servicesPhotos as string[];
-
-      const normalize = (str = ''): string =>
-        str
-          .toLowerCase()
-          .replace(/[_\-]/g, ' ')
-          .replace(/[^a-z0-9\s]/g, ' ')
-          .replace(/\s+/g, ' ')
-          .trim();
-
-      const stopwords = new Set([
-        'photo',
-        'photos',
-        'photography',
-        'shoot',
-        'session',
-        'sessions',
-        'the',
-        'and',
-        'of',
-        'a',
-        'for',
-      ]);
-
-      const tokens = (s = '') =>
-        normalize(s)
-          .split(' ')
-          .filter(Boolean)
-          .filter((w) => !stopwords.has(w));
-
-      const photoPool = svcPhotos.map((p) => {
-        const base = (p.split('/').pop() || p).replace(/\.[^/.]+$/, '');
-        return { path: p, base, toks: tokens(base) };
-      });
-
-      const available = [...photoPool];
-
-      // const mapped: Service[] = (data || []).map((s: Service, i: number) => {
-      //   const titleSource = (s.slug && s.slug.length > 0) ? s.slug : s.title;
-      //   const svcToks = tokens(titleSource || '');
-
-      //   // Find best match by token overlap among available photos
-      //   let bestIdx = -1;
-      //   let bestScore = 0;
-      //   for (let j = 0; j < available.length; j++) {
-      //     const p = available[j];
-      //     const common = p.toks.filter((t) => svcToks.includes(t));
-      //     if (common.length > bestScore) {
-      //       bestScore = common.length;
-      //       bestIdx = j;
-      //     }
-      //   }
-
-      //   let chosen: string | undefined;
-      //   if (bestIdx >= 0 && bestScore > 0) {
-      //     chosen = available[bestIdx].path;
-      //     available.splice(bestIdx, 1); // ensure unique assignment
-      //   }
-
-      //   // fallback to prewedding by index, then original image_url
-      //   const final = chosen || imgs[i] || s.image_url;
-      //   return { ...s, image_url: final } as Service;
-      // });
-
-
-      const mapped: Service[] = (data || []).map((s: Service) => {
-        const key = (s.slug || s.title || '').toLowerCase();
-
-        const image =
-          serviceImageMap[key] ||
-          serviceImageMap[key.replace(' photography', '')] ||
-          s.image_url;
-
-        return {
-          ...s,
-          image_url: image,
-        };
-      });
-
-      setServices(mapped);
+      // Use local services data instead of Supabase
+      const activeServices = servicesData
+        .filter(service => service.is_active)
+        .sort((a, b) => a.display_order - b.display_order);
+      
+      setServices(activeServices);
     } catch (error) {
       console.error('Error loading services:', error);
     } finally {

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "baby-born-1",
+    "title": "babyBorn",
+    "image_url": "/Baby_Born/babyBorn.JPG",
+    "thumbnail_url": "/Baby_Born/babyBorn.JPG",
+    "category": "newborn"
+  },
+  {
+    "id": "baby-born-2",
+    "title": "babyBorn",
+    "image_url": "/Baby_Born/babyBorn.jpeg",
+    "thumbnail_url": "/Baby_Born/babyBorn.jpeg",
+    "category": "newborn"
+  }
+]

@@ -1,134 +1,155 @@
-import { useEffect, useState } from 'react';
-import { X } from 'lucide-react';
-import type { GalleryImage } from '../lib/supabase';
-import { weddingFilenames } from '../data/Data';
-import { preWeddingVideos } from '../data/preWeddingVideos';
-import { useRef } from 'react';
-
+import { useEffect, useState, useMemo } from "react";
+import { X } from "lucide-react";
+import type { GalleryImage } from "../types";
+import { preWeddingVideos } from "../data/preWeddingVideos";
+import { useRef } from "react";
+import weddingData from "../data/weddingData.json";
+import babyBornData from "../data/babyBornData.json";
+import birthdayData from "../data/birthdayData.json";
+import modelingData from "../data/modelingData.json";
+import indoorData from "../data/indoorData.json";
+import outdoorData from "../data/outdoorData.json";
+import servicesPhotosData from "../data/servicesPhotosData.json";
 
 export default function Gallery() {
-  const [images, setImages] = useState<GalleryImage[]>([]);
   const [filteredImages, setFilteredImages] = useState<GalleryImage[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [loading, setLoading] = useState(true);
-  const ALL_LIMIT = 45;
+  const [brokenImages, setBrokenImages] = useState<Set<string>>(new Set());
   const [showPreWeddingVideos, setShowPreWeddingVideos] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const [videoKey, setVideoKey] = useState(0);
   const [currentVideo, setCurrentVideo] = useState(0);
-const iframeRef = useRef<HTMLIFrameElement | null>(null);
+  const iframeRef = useRef<HTMLIFrameElement | null>(null);
+
+  const handleImageError = (imageId: string) => {
+    setBrokenImages((prev) => new Set(prev).add(imageId));
+  };
 
 
-const pauseVideo = () => {
-  iframeRef.current?.contentWindow?.postMessage(
-    JSON.stringify({
-      event: 'command',
-      func: 'pauseVideo',
-      args: [],
-    }),
-    '*'
-  );
-};
+  console.log("weddingData Images:", weddingData);
 
-
+  const pauseVideo = () => {
+    iframeRef.current?.contentWindow?.postMessage(
+      JSON.stringify({
+        event: "command",
+        func: "pauseVideo",
+        args: [],
+      }),
+      "*"
+    );
+  };
 
   const categories = [
-    { id: 'all', label: 'All' },
-    { id: 'wedding', label: 'Wedding' },
-    { id: 'pre-wedding', label: 'Pre-Wedding' },
-    { id: 'newborn', label: 'Newborn' },
-    { id: 'birthday', label: 'Birthday' },
-    { id: 'modeling', label: 'Modeling' },
-    { id: 'indoor', label: 'Indoor' },
-    { id: 'outdoor', label: 'Outdoor' },
+    { id: "all", label: "All" },
+    { id: "wedding", label: "Wedding" },
+    { id: "pre-wedding", label: "Pre-Wedding" },
+    { id: "newborn", label: "Newborn" },
+    { id: "birthday", label: "Birthday" },
+    { id: "modeling", label: "Modeling" },
+    { id: "indoor", label: "Indoor" },
+    { id: "outdoor", label: "Outdoor" },
   ];
 
-
-
-  // Load only local images (modeling + wedding) — no Supabase
-  useEffect(() => {
-    setImages([...modelingImages, ...weddingImages]);
-    setFilteredImages([...modelingImages, ...weddingImages]);
-    setLoading(false);
+  // Load images from all JSON data files
+  const allGalleryImages: GalleryImage[] = useMemo(() => {
+    const images: GalleryImage[] = [];
+    
+    // Add images from all category-specific JSON files and map to GalleryImage interface
+    weddingData.forEach((img) => {
+      images.push({
+        ...img,
+        description: undefined,
+        display_order: 999,
+        is_featured: false,
+        created_at: new Date().toISOString(),
+      } as GalleryImage);
+    });
+    
+    babyBornData.forEach((img) => {
+      images.push({
+        ...img,
+        description: undefined,
+        display_order: 999,
+        is_featured: false,
+        created_at: new Date().toISOString(),
+      } as GalleryImage);
+    });
+    
+    birthdayData.forEach((img) => {
+      images.push({
+        ...img,
+        description: undefined,
+        display_order: 999,
+        is_featured: false,
+        created_at: new Date().toISOString(),
+      } as GalleryImage);
+    });
+    
+    modelingData.forEach((img) => {
+      images.push({
+        ...img,
+        description: undefined,
+        display_order: 999,
+        is_featured: false,
+        created_at: new Date().toISOString(),
+      } as GalleryImage);
+    });
+    
+    indoorData.forEach((img) => {
+      images.push({
+        ...img,
+        description: undefined,
+        display_order: 999,
+        is_featured: false,
+        created_at: new Date().toISOString(),
+      } as GalleryImage);
+    });
+    
+    outdoorData.forEach((img) => {
+      images.push({
+        ...img,
+        description: undefined,
+        display_order: 999,
+        is_featured: false,
+        created_at: new Date().toISOString(),
+      } as GalleryImage);
+    });
+    
+    servicesPhotosData.forEach((img) => {
+      images.push({
+        ...img,
+        description: undefined,
+        display_order: 999,
+        is_featured: false,
+        created_at: new Date().toISOString(),
+      } as GalleryImage);
+    });
+    
+    return images;
   }, []);
 
-
-
-  const weddingImages: GalleryImage[] = weddingFilenames.map((file, i) => {
-    const lower = file.toLowerCase();
-    let category = 'wedding';
-    if (lower.includes('pre') || lower.includes('pre-wedding') || lower.includes('prew')) {
-      category = 'pre-wedding';
-    } else if (lower.includes('baby') || lower.includes('born') || lower.includes('newborn')) {
-      category = 'newborn';
-    } else if (lower.includes('birthday') || lower.includes('bday')) {
-      category = 'birthday';
-    }
-
-    return {
-      id: `wedding-${i}-${file}`,
-      title: file.replace(/\.[^.]+$/, ''),
-      image_url: `/Wedding_Photos/${file}`,
-      thumbnail_url: `/Wedding_Photos/${file}`,
-      category,
-      description: undefined,
-      display_order: 999,
-      is_featured: false,
-      created_at: new Date().toISOString(),
-    } as GalleryImage;
-  });
-  const modelingFilenames = [
-    '1F2A8259.JPG',
-    '1F2A8268.JPG',
-    '1F2A8271.JPG',
-    '1F2A8278.JPG',
-    '1F2A8285.JPG',
-    '1F2A8307.JPG',
-    '1F2A8324.JPG',
-    '1F2A8328.JPG',
-    '1F2A8337.JPG',
-    '1F2A8705.JPG',
-    '1F2A8709.JPG',
-    '1F2A8710.JPG',
-    '1F2A8720.JPG',
-    '1F2A8722.JPG',
-  ];
-
-  const modelingImages: GalleryImage[] = modelingFilenames.map((file, i) => ({
-    id: `modeling-${i}-${file}`,
-    title: file.replace(/\.[^.]+$/, ''),
-    image_url: `/Modeling_Photos/${file}`,
-    thumbnail_url: `/Modeling_Photos/${file}`,
-    category: 'modeling',
-    description: undefined,
-    display_order: 999,
-    is_featured: false,
-    created_at: new Date().toISOString(),
-  }));
+  // Load images from JSON data
+  useEffect(() => {
+    setFilteredImages(allGalleryImages);
+    setLoading(false);
+  }, [allGalleryImages]);
 
   useEffect(() => {
-    if (selectedCategory === 'all') {
-      const allImages = [...images, ...weddingImages];
-      setFilteredImages(allImages.slice(15, ALL_LIMIT)); // 👈 only 25;
-    } else if (selectedCategory === 'modeling') {
-      const supabaseModeling = images.filter((img) => img.category === 'modeling');
-      setFilteredImages([...supabaseModeling, ...modelingImages]);
-    } else if (
-      selectedCategory === 'wedding' ||
-      selectedCategory === 'pre-wedding' ||
-      selectedCategory === 'newborn' ||
-      selectedCategory === 'birthday'
-    ) {
-      const supabaseMatch = images.filter((img) => img.category === selectedCategory);
-      const localMatch = weddingImages.filter((img) => img.category === selectedCategory);
-      const modelingLocalMatch = modelingImages.filter((img) => img.category === selectedCategory);
-      setFilteredImages([...supabaseMatch, ...localMatch, ...modelingLocalMatch]);
+    const IMAGES_LIMIT = 25;
+    if (selectedCategory === "all") {
+      setFilteredImages(allGalleryImages.slice(0, IMAGES_LIMIT));
+    } else if (selectedCategory === "pre-wedding") {
+      // Show no images for pre-wedding, only videos
+      setFilteredImages([]);
     } else {
-      setFilteredImages(images.filter((img) => img.category === selectedCategory));
+      const categoryImages = allGalleryImages.filter(
+        (img: GalleryImage) => img.category === selectedCategory
+      );
+      setFilteredImages(categoryImages.slice(0, IMAGES_LIMIT));
     }
-  }, [selectedCategory, images]);
-
+  }, [selectedCategory, allGalleryImages]);
 
   if (loading) {
     return (
@@ -158,13 +179,16 @@ const pauseVideo = () => {
               key={category.id}
               // onClick={() => setSelectedCategory(category.id)}
               onClick={() => {
-                if (selectedCategory === 'pre-wedding' && category.id !== 'pre-wedding') {
-    pauseVideo(); // 👈 PAUSE instead of stop
-  }
+                if (
+                  selectedCategory === "pre-wedding" &&
+                  category.id !== "pre-wedding"
+                ) {
+                  pauseVideo(); // 👈 PAUSE instead of stop
+                }
 
                 setSelectedCategory(category.id);
 
-                if (category.id === 'pre-wedding') {
+                if (category.id === "pre-wedding") {
                   setShowPreWeddingVideos(true);
                   setVideoKey((k) => k + 1); // restart videos
                   setCurrentVideo(0);
@@ -173,11 +197,11 @@ const pauseVideo = () => {
                   setIsMuted(false);
                 }
               }}
-
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${selectedCategory === category.id
-                ? 'bg-amber-600 text-white shadow-lg scale-105'
-                : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+                selectedCategory === category.id
+                  ? "bg-amber-600 text-white shadow-lg scale-105"
+                  : "bg-white text-gray-700 hover:bg-gray-100"
+              }`}
             >
               {category.label}
             </button>
@@ -185,36 +209,49 @@ const pauseVideo = () => {
         </div>
 
         <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-          {filteredImages.map((image, index) => (
-            <div
-              key={image.id}
-              className="break-inside-avoid group relative overflow-hidden rounded-2xl cursor-pointer"
-              style={{ animationDelay: `${index * 50}ms` }}
-              onClick={() => setSelectedImage(image)}
-            >
-              <img
-                src={image.thumbnail_url}
-                alt={image.title}
-                className="w-full h-auto group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-white font-semibold text-lg">{image.title}</h3>
-                  {image.description && (
-                    <p className="text-white/80 text-sm mt-1">{image.description}</p>
-                  )}
+          {filteredImages
+            .filter((image) => !brokenImages.has(image.id))
+            .map((image, index) => (
+              <div
+                key={image.id}
+                className="break-inside-avoid group relative overflow-hidden rounded-2xl cursor-pointer"
+                style={{ animationDelay: `${index * 50}ms` }}
+                onClick={() => setSelectedImage(image)}
+              >
+                <img
+                  src={image.thumbnail_url}
+                  alt={image.title}
+                  className="w-full h-auto group-hover:scale-110 transition-transform duration-500"
+                  onError={() => handleImageError(image.id)}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* Removed title and description on hover */}
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
 
-        {filteredImages.length === 0 && selectedCategory !== 'pre-wedding' && (
-  <div className="text-center py-12">
-    <p className="text-gray-500 text-lg">No images in this category yet</p>
-  </div>
-)}
+        {filteredImages.filter((image) => !brokenImages.has(image.id))
+          .length === 0 &&
+          selectedCategory !== "pre-wedding" && (
+            <div className="text-center py-12">
+              <p className="text-gray-500 text-lg">
+                No images in this category yet
+              </p>
+            </div>
+          )}
 
+        {filteredImages.filter((image) => !brokenImages.has(image.id)).length >
+          0 && (
+          <div className="text-center mt-12">
+            <a
+              href={`/gallery/all?category=${selectedCategory}`}
+              className="inline-block px-8 py-3 bg-amber-600 text-white rounded-full font-medium hover:bg-amber-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              See More
+            </a>
+          </div>
+        )}
       </div>
 
       {selectedImage && (
@@ -236,9 +273,13 @@ const pauseVideo = () => {
               onClick={(e) => e.stopPropagation()}
             />
             <div className="text-center mt-4">
-              <h3 className="text-white text-xl font-semibold">{selectedImage.title}</h3>
+              <h3 className="text-white text-xl font-semibold">
+                {selectedImage.title}
+              </h3>
               {selectedImage.description && (
-                <p className="text-white/80 mt-2">{selectedImage.description}</p>
+                <p className="text-white/80 mt-2">
+                  {selectedImage.description}
+                </p>
               )}
             </div>
           </div>
@@ -285,18 +326,17 @@ const pauseVideo = () => {
             className="aspect-video rounded-xl overflow-hidden shadow-lg"
           >
             <iframe
-  ref={iframeRef}
-  src={`${preWeddingVideos[currentVideo]}?enablejsapi=1&autoplay=1&mute=${isMuted ? 1 : 0}`}
-  allow="autoplay; encrypted-media; fullscreen"
-  allowFullScreen
-  className="w-full h-full border-0"
-/>
-
+              ref={iframeRef}
+              src={`${
+                preWeddingVideos[currentVideo]
+              }?enablejsapi=1&autoplay=1&mute=${isMuted ? 1 : 0}`}
+              allow="autoplay; encrypted-media; fullscreen"
+              allowFullScreen
+              className="w-full h-full border-0"
+            />
           </div>
         </div>
       )}
-
-
 
       {/* {selectedCategory === 'all' && (
   <div className="text-center mt-12">
@@ -308,7 +348,6 @@ const pauseVideo = () => {
     </a>
   </div>
 )} */}
-
     </section>
   );
 }

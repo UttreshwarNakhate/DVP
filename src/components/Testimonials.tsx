@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
-import { supabase, Testimonial } from '../lib/supabase';
+import { testimonialsData, Testimonial } from '../data/testimonialsData';
 
 export default function Testimonials() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
@@ -13,13 +13,11 @@ export default function Testimonials() {
 
   const loadTestimonials = async () => {
     try {
-      const { data, error } = await supabase
-        .from('testimonials')
-        .select('*')
-        .order('display_order');
-
-      if (error) throw error;
-      setTestimonials(data || []);
+      // Use local testimonials data instead of Supabase
+      const sortedTestimonials = testimonialsData
+        .sort((a, b) => a.display_order - b.display_order);
+      
+      setTestimonials(sortedTestimonials);
     } catch (error) {
       console.error('Error loading testimonials:', error);
     } finally {
