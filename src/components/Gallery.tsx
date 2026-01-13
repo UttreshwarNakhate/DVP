@@ -241,7 +241,7 @@ export default function Gallery() {
             </div>
           )}
 
-        {filteredImages.filter((image) => !brokenImages.has(image.id)).length >
+        {/* {filteredImages.filter((image) => !brokenImages.has(image.id)).length >
           0 && (
           <div className="text-center mt-12">
             <a
@@ -251,7 +251,7 @@ export default function Gallery() {
               See More
             </a>
           </div>
-        )}
+        )} */}
       </div>
 
       {selectedImage && (
