@@ -44,8 +44,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className={`p-2 rounded-full ${isScrolled ? 'bg-amber-600' : 'bg-white'}`}>
-              {/* <Camera className={`w-6 h-6 ${isScrolled ? 'text-white' : 'text-amber-600'}`} /> */}
-              <img src="/img/logoImage.png" alt="Logo" className="w-14 h-14 rounded-full" />
+              <Camera className={`w-6 h-6 ${isScrolled ? 'text-white' : 'text-amber-600'}`} />
+              {/* <img src="/img/logoImage.png" alt="Logo" className="w-14 h-14 rounded-full" /> */}
             </div>
             <div>
               <h1 className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
