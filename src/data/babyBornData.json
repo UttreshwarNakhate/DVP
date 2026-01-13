@@ -1,16 +1,58 @@
 [
   {
     "id": "baby-born-1",
-    "title": "babyBorn",
-    "image_url": "/Baby_Born/babyBorn.JPG",
-    "thumbnail_url": "/Baby_Born/babyBorn.JPG",
+    "title": "sweet baby",
+    "image_url": "/Baby_Born/Media1.jfif",
+    "thumbnail_url": "/Baby_Born/Media1.jfif",
     "category": "newborn"
   },
   {
     "id": "baby-born-2",
-    "title": "babyBorn",
-    "image_url": "/Baby_Born/babyBorn.jpeg",
-    "thumbnail_url": "/Baby_Born/babyBorn.jpeg",
+    "title": "sweet baby",
+    "image_url": "/Baby_Born/Media2.jfif",
+    "thumbnail_url": "/Baby_Born/Media2.jfif",
+    "category": "newborn"
+  },
+  {
+    "id": "baby-born-3",
+    "title": "sweet baby",
+    "image_url": "/Baby_Born/Media3.jfif",
+    "thumbnail_url": "/Baby_Born/Media3.jfif",
+    "category": "newborn"
+  },
+  {
+    "id": "baby-born-4",
+    "title": "sweet baby",
+    "image_url": "/Baby_Born/Media4.JPG",
+    "thumbnail_url": "/Baby_Born/Media4.JPG",
+    "category": "newborn"
+  },
+  {
+    "id": "baby-born-5",
+    "title": "sweet baby",
+    "image_url": "/Baby_Born/Media5.jpeg",
+    "thumbnail_url": "/Baby_Born/Media5.jpeg",
+    "category": "newborn"
+  },
+  {
+    "id": "baby-born-6",
+    "title": "sweet baby",
+    "image_url": "/Baby_Born/Media6.jfif",
+    "thumbnail_url": "/Baby_Born/Media6.jfif",
+    "category": "newborn"
+  },
+  {
+    "id": "baby-born-7",
+    "title": "sweet baby",
+    "image_url": "/Baby_Born/Media7.jfif",
+    "thumbnail_url": "/Baby_Born/Media7.jfif",
+    "category": "newborn"
+  },
+  {
+    "id": "baby-born-8",
+    "title": "sweet baby",
+    "image_url": "/Baby_Born/Media.jfif",
+    "thumbnail_url": "/Baby_Born/Media8.jfif",
     "category": "newborn"
   }
 ]

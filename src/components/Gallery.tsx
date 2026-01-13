@@ -9,7 +9,9 @@ import birthdayData from "../data/birthdayData.json";
 import modelingData from "../data/modelingData.json";
 import indoorData from "../data/indoorData.json";
 import outdoorData from "../data/outdoorData.json";
+import babyShootData from "../data/babyShootData.json";
 import servicesPhotosData from "../data/servicesPhotosData.json";
+import { toGalleryImage } from "../helpers/GalleryImage";
 
 export default function Gallery() {
   const [filteredImages, setFilteredImages] = useState<GalleryImage[]>([]);
@@ -26,7 +28,6 @@ export default function Gallery() {
   const handleImageError = (imageId: string) => {
     setBrokenImages((prev) => new Set(prev).add(imageId));
   };
-
 
   console.log("weddingData Images:", weddingData);
 
@@ -45,8 +46,9 @@ export default function Gallery() {
     { id: "all", label: "All" },
     { id: "wedding", label: "Wedding" },
     { id: "pre-wedding", label: "Pre-Wedding" },
-    { id: "newborn", label: "Newborn" },
+    { id: "newborn", label: "New Born Baby" },
     { id: "birthday", label: "Birthday" },
+    { id: "babyShoot", label: "Baby Shoot" },
     { id: "modeling", label: "Modeling" },
     { id: "indoor", label: "Indoor" },
     { id: "outdoor", label: "Outdoor" },
@@ -55,7 +57,7 @@ export default function Gallery() {
   // Load images from all JSON data files
   const allGalleryImages: GalleryImage[] = useMemo(() => {
     const images: GalleryImage[] = [];
-    
+
     // Add images from all category-specific JSON files and map to GalleryImage interface
     weddingData.forEach((img) => {
       images.push({
@@ -66,7 +68,7 @@ export default function Gallery() {
         created_at: new Date().toISOString(),
       } as GalleryImage);
     });
-    
+
     babyBornData.forEach((img) => {
       images.push({
         ...img,
@@ -76,7 +78,17 @@ export default function Gallery() {
         created_at: new Date().toISOString(),
       } as GalleryImage);
     });
-    
+
+    babyShootData.forEach((img) => {
+      images.push({
+        ...img,
+        description: undefined,
+        display_order: 999,
+        is_featured: false,
+        created_at: new Date().toISOString(),
+      } as GalleryImage);
+    });
+
     birthdayData.forEach((img) => {
       images.push({
         ...img,
@@ -86,7 +98,7 @@ export default function Gallery() {
         created_at: new Date().toISOString(),
       } as GalleryImage);
     });
-    
+
     modelingData.forEach((img) => {
       images.push({
         ...img,
@@ -96,7 +108,7 @@ export default function Gallery() {
         created_at: new Date().toISOString(),
       } as GalleryImage);
     });
-    
+
     indoorData.forEach((img) => {
       images.push({
         ...img,
@@ -106,7 +118,7 @@ export default function Gallery() {
         created_at: new Date().toISOString(),
       } as GalleryImage);
     });
-    
+
     outdoorData.forEach((img) => {
       images.push({
         ...img,
@@ -116,7 +128,7 @@ export default function Gallery() {
         created_at: new Date().toISOString(),
       } as GalleryImage);
     });
-    
+
     servicesPhotosData.forEach((img) => {
       images.push({
         ...img,
@@ -126,7 +138,7 @@ export default function Gallery() {
         created_at: new Date().toISOString(),
       } as GalleryImage);
     });
-    
+
     return images;
   }, []);
 
@@ -136,20 +148,40 @@ export default function Gallery() {
     setLoading(false);
   }, [allGalleryImages]);
 
+
   useEffect(() => {
     const IMAGES_LIMIT = 25;
+
     if (selectedCategory === "all") {
       setFilteredImages(allGalleryImages.slice(0, IMAGES_LIMIT));
+    } else if (selectedCategory === "birthday") {
+      setFilteredImages(
+        birthdayData.slice(0, IMAGES_LIMIT).map(toGalleryImage)
+      );
+    } else if (selectedCategory === "babyShoot") {
+      setFilteredImages(
+        babyShootData.slice(0, IMAGES_LIMIT).map(toGalleryImage)
+      );
+    } else 
+      if (selectedCategory === "newborn") {
+      setFilteredImages(
+        babyBornData.slice(0, IMAGES_LIMIT).map(toGalleryImage)
+      );
+    } else if (selectedCategory === "indoor") {
+      setFilteredImages(indoorData.slice(0, IMAGES_LIMIT).map(toGalleryImage));
+    } else if (selectedCategory === "outdoor") {
+      setFilteredImages(outdoorData.slice(0, IMAGES_LIMIT).map(toGalleryImage));
+    } else if (selectedCategory === "wedding") {
+      setFilteredImages(weddingData.slice(0, IMAGES_LIMIT).map(toGalleryImage));
     } else if (selectedCategory === "pre-wedding") {
-      // Show no images for pre-wedding, only videos
       setFilteredImages([]);
     } else {
       const categoryImages = allGalleryImages.filter(
-        (img: GalleryImage) => img.category === selectedCategory
+        (img) => img.category === selectedCategory
       );
       setFilteredImages(categoryImages.slice(0, IMAGES_LIMIT));
     }
-  }, [selectedCategory, allGalleryImages]);
+  }, [selectedCategory]);
 
   if (loading) {
     return (

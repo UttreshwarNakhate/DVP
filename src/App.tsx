@@ -17,7 +17,7 @@ function App() {
       <Gallery />
       <About />
       {/* <Pricing /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>
